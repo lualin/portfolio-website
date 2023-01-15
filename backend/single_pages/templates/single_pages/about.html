@@ -1,0 +1,91 @@
+{% extends 'single_pages/base.html' %}
+{% load static %}
+
+{% block page_title %}
+About
+{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/about/about.css' %}">
+
+<section class="features7 cid-sxcB0lqMt9" id="about_header">
+    <div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                    <div class="row">
+                        <div class="left-side align-center col-12 col-lg">
+
+                        </div>
+                        <div class="right-side align-center col-12 col-lg item-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card-box align-center">
+                                    <h5 class="mbr-section-title art mbr-fonts-style display-1">
+                                        ABOUT US
+                                    </h5>
+                                    <p class="mbr-text text mbr-fonts-style display-7">Lorem ipsum dolor sit amet,
+                                        <strong>pri autem nemore bonorum te. Autem fierent ullamcorper ius
+                                            no.&nbsp;Te
+                                            tibique intellegam mediocritatem his, est quis.</strong>
+                                    </p>
+                                    <p class="mbr-text desc mbr-fonts-style display-7">
+                                        <em>LL</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-lzWqy42LOe">
+    <div class="wrapper">
+        <div class="art" id="layer-1">
+            <div class="noise"></div>
+            <div class="texts" id="layer-2">
+                <span id="text_1">이플 바람꽃</span>
+                <span id="text_2">@Lualin</span>
+                <span id="text_3">427</span>
+                <span id="text_4">아름드리</span>
+                <span id="text_5">안다미로</span>
+                <span id="text_6">달볓 © 2017</span>
+            </div>
+            <div class="door" id="door_1"></div>
+            <div class="door-shadow"></div>
+            <div class="door-shadow-2"></div>
+            <div class="door" id="door_2"></div>
+            <div class="gradient-1"></div>
+            <div class="gradient-2"></div>
+            <div class="round" id="layer-3">
+                <div class="textbox">
+                    <span id="text_6">儿ーピング</span>
+                    <h1 class="clip-text" id="text_7" data-text="作業">作業</h1>
+                    <h1 class="clip-text" id="text_8">作業</h1>
+                </div>
+            </div>
+            <img class="man"
+                src="{% static 'img/about/moon.png' %}"
+                id="layer-4" />
+        </div>
+    </div>
+    
+</section>
+
+<section class="cid-sxcB0lqMt9">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/n36d85174d76/auckland/" data-theme="dark"
+        data-basecolor="#0e0f1a" data-textcolor="#86a5e8" data-highcolor="#f07dc1" data-lowcolor="#ABC4FA"
+        data-suncolor="#e04d4d" data-mooncolor="#d9e9eb" data-cloudcolor="#d0cdcd" data-cloudfill="#d0cdcd"
+        data-raincolor="#aed2f2" width="60%">Auckland, New Zealand</a>
+</section>
+
+<script src="{% static 'js/about/about.js' %}"></script>
+<script>
+    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+</script>
+
+{% endblock %}ㅗ

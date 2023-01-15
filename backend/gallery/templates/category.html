@@ -1,0 +1,69 @@
+{% extends 'single_pages/base.html' %}
+{% load static %}
+
+{% block page_title %}
+Gallery
+{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+
+<section class="features7 cid-sxcB0lqMt9" id="gallery_header">
+    <div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                    <div class="row">
+                        <div class="left-side align-center col-12 col-lg">
+                            <img src="{% static 'img/gallery/gallery_header1.jpg' %}" class="first" width="266" height="400">
+                            <img src="{% static 'img/gallery/gallery_header2.jpg.jpg' %}" class="second" width="266" height="400">
+                        </div>
+                        <div class="right-side align-center col-12 col-lg item-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card-box align-center">
+                                    <h5 class="mbr-section-title art mbr-fonts-style display-1">
+                                        GALLERY
+                                    </h5>
+                                    <p class="mbr-text text mbr-fonts-style display-7">Lorem ipsum dolor sit amet,
+                                        <strong>pri autem nemore bonorum te. Autem fierent ullamcorper ius
+                                            no.&nbsp;Te
+                                            tibique intellegam mediocritatem his, est quis.</strong>
+                                    </p>
+                                    <p class="mbr-text desc mbr-fonts-style display-7">
+                                        <em>LL</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features7 cid-sxcB0lqMt9">
+    <div class="masonry">
+        {% for c in categories %}
+        <div class="grid">
+            {% with 'img/gallery/category_thumbnail/'|add:c.tag|add:'.jpg' as img_static %}
+            <img src="{% static img_static %}">
+            {% endwith %}
+            <div class="grid__body">
+                <div class="relative">
+                    <a class="grid__link" target="_blank" href="{{c.get_absolute_url}}"></a>
+                    <h1 class="grid__title">- {{c.title}} -</h1>
+                    <p class="grid__author">Lualin</p>
+                </div>
+                <div class="mt-auto">
+                    <span class="grid__tag">#{{c.tag}}</span>
+                </div>
+            </div>    
+        </div>
+        {% endfor %}
+    </div> 
+</section>
+
+
+{% endblock %}
