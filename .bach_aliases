@@ -1,2 +1,2 @@
-alias runserver='python3 backend/manage.py runserver'
+alias runserver='python3 ./backend/manage.py runserver'
 

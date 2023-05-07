@@ -220,7 +220,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 200;
-  filter: brightness(70%);
+  filter: brightness(90%);
   width: 40%;
   height: 30%;
 }
