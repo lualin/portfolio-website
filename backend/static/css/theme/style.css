@@ -220,6 +220,19 @@ iframe {
   width: 100%;
 }
 
+.card-box h4 {
+    margin-bottom: 0.5rem;
+    color: lavender;
+    font-weight: bold;
+    padding: 1rem 2rem;
+}
+
+.card-box strong {
+    text-align: center;
+    color: thistle;
+    font-size: 1.25rem;
+}
+
 .card-img {
   text-align: center;
   flex-shrink: 0;

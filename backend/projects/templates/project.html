@@ -26,10 +26,10 @@ Project
                                     <h5 class="mbr-section-title art mbr-fonts-style display-1">
                                         PROJECT
                                     </h5>
-                                    <p class="mbr-text text mbr-fonts-style display-7">Lorem ipsum dolor sit amet,
-                                        <strong>pri autem nemore bonorum te. Autem fierent ullamcorper ius
-                                            no.&nbsp;Te
-                                            tibique intellegam mediocritatem his, est quis.</strong>
+                                    <p class="mbr-text text mbr-fonts-style display-7">
+                                        <strong>
+                                            
+                                        </strong>
                                     </p>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ Project
                     <div class="item-img">
                         <img src="{{p.img_url}}" alt="">
                         <div class="item-button-section">
-                            <button class="item-button">VIEW</button>
+                            <button class="item-button" onclick="window.open('{{p.link}}', '_blank')">VIEW</button>
                         </div>
                         <div class="active-overlay"></div>
                     </div>
@@ -62,12 +62,20 @@ Project
                             </h3>
                         </a>
                         <div class="item-tags">
-                            <div class="tags-wrapper">
-                                <p>
-                                    {{p.description}}
-                                </p>
+                            <div class="tags-wrapper">qkrqk123
+                               <!--  -->
                             </div>
                             <div class="stack-items">
+                                <div>
+                                    <details>
+                                        <summary>
+                                            Description
+                                        </summary>
+                                        <div class="stack-desc">
+                                            {{p.description}}
+                                        </div>
+                                    </details>
+                                </div>
                                 <div>
                                     <details>
                                         <summary>
