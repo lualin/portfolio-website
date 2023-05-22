@@ -1,12 +1,12 @@
 
 asgiref==3.5.2
+dj-database-url==2.0.0
 django==4.1.2
 django-admin-index==2.0.2
 django-cors-headers==3.13.0
 django-ordered-model==3.6
 django-resized==1.0.2
 djangorestframework==3.14.0
-dj-database-url==2.0.0
 gunicorn==20.1.0
 pillow==9.2.0
 psycopg2-binary==2.9.6
