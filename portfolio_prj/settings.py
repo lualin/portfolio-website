@@ -133,7 +133,7 @@ STATIC_URL = '/static/' # URL location of static files located in STATIC_ROOT
 STATICFILES_DIRS = [BASE_DIR / "static"] # Tells Django where to look for static files in a Django Project
 STATIC_ROOT = BASE_DIR / "staticfiles" # Folder location of static files where collectstatic is run
 # STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage" # File storage engine used when collecting static files with the collectstatic command
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
